@@ -11,18 +11,19 @@ class HostAdmin(admin.ModelAdmin):
     filter_horizontal = ('host_groups','templates')
 
 class TemplateAdmin(admin.ModelAdmin):
-    filter_horizontal = ('service','trigger')
+    filter_horizontal = ('service')
+
+class ServicesAdmin(admin.ModelAdmin):
+    list_display = ('service_name','interval','plugin_name')
 
 
 
 
 
 
-
-
-admin.site.register(models.Host)
+admin.site.register(models.Host,HostAdmin)
 admin.site.register(models.HostGroup)
 admin.site.register(models.Template)
 admin.site.register(models.ServiceIndex)
-admin.site.register(models.Services)
+admin.site.register(models.Services,ServicesAdmin)
 admin.site.register(models.Userprofile)

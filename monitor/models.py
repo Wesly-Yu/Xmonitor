@@ -7,12 +7,11 @@ class Host(models.Model):
     hostname = models.CharField(max_length=64,unique=True)
     ip_address = models.GenericIPAddressField(unique=True)
     host_groups = models.ManyToManyField('HostGroup',blank=True)
-    agent_choices = (('snmp','snmp'),('agent','agent'),('wget','wget'))
-    agent_type = models.SmallIntegerField(agent_choices)
+    monitor_choices = (('snmp','SNMP'),('agent','Agent'),('wget','WGET'))
+    monitor_type = models.CharField(u'监控方式',choices=monitor_choices,max_length=64)
     templates = models.ManyToManyField("Template",blank=True)
     status_choices = ((0,'Offline'),(1,'Online'),(2,'Error'),(3,'Down'),(4,'Unreachable'))
-    status = models.SmallIntegerField(status_choices,default=0)
-    enable = models.BooleanField(default=True)
+    status = models.IntegerField(u'状态',choices=status_choices,default=0)
     desc = models.TextField(u"备注",blank=True,null=True)
     host_alive_check_interval = models.IntegerField(u"检查主机存活间隔",default=30)
     def __str__(self):
@@ -21,7 +20,7 @@ class Host(models.Model):
 
 '''存储监控服务指标(比如cpu  memery I/O等)'''
 class Services(models.Model):
-    service_name = models.CharField(max_length=64)
+    service_name = models.CharField(max_length=64,verbose_name=u'服务名称')
     indexs = models.ManyToManyField("ServiceIndex",blank=True,verbose_name=u'指标列表')
     interval = models.PositiveIntegerField(default=60,verbose_name='监控间隔')
     plugin_name = models.CharField(u'插件名',max_length=64)
@@ -33,10 +32,10 @@ class Services(models.Model):
 
 '''存储监控服务指标数据（比如cpu的指标 idle IO wait等等）'''
 class ServiceIndex(models.Model):
-    index_name = models.CharField(max_length=64,unique=True)    #指标名称
+    index_name = models.CharField(max_length=64)    #指标名称
     real_key =models.CharField(max_length=64) #真正关注的指标
     data_type_choices = (('int','int'),('str','str'),('float','float'))
-    data_type = models.PositiveIntegerField(u'数据指标类型',choices=data_type_choices,default=0)
+    data_type = models.CharField(u'数据指标类型',choices=data_type_choices,default='int',max_length=64)
     def __str__(self):
         return self.index_name
 

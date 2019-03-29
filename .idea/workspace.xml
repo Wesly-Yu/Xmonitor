@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c816cf3-bd8a-4499-aac4-82d9e8c18914" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/monitor/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monitor/migrations/0002_auto_20190329_1508.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monitor/migrations/0003_auto_20190329_1513.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monitor/migrations/0004_auto_20190329_1514.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Xmonitor/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Xmonitor/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/monitor/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/monitor/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitor/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/monitor/migrations/0001_initial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/monitor/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/monitor/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,29 +35,29 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2070" />
-          <entry key="py@Xmonitor" value="60" />
+          <entry key="py" value="2253" />
+          <entry key="py@Xmonitor" value="204" />
           <entry key="txt" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CommandLine" value="21" />
-          <entry key="PLAIN_TEXT" value="48" />
-          <entry key="Python" value="2070" />
+          <entry key="CommandLine" value="91" />
+          <entry key="PLAIN_TEXT" value="122" />
+          <entry key="Python" value="2253" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="1" />
-          <entry key="py" value="16" />
+          <entry key="py" value="27" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="Python" value="16" />
+          <entry key="Python" value="27" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
@@ -63,28 +65,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Xmonitor/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+            <state relative-caret-position="570">
+              <caret line="33" selection-start-line="33" selection-end-line="33" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/monitor/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+            <state relative-caret-position="304">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
-                <marker date="1553838876349" expanded="true" signature="118:119" ph="..." />
-                <marker date="1553838876349" expanded="true" signature="118:123" ph="..." />
-                <marker date="1553838876349" expanded="true" signature="1488:1833" ph="..." />
-                <marker date="1553838876349" expanded="true" signature="1488:1844" ph="..." />
-                <marker date="1553838876349" expanded="true" signature="2108:2113" ph="..." />
-                <marker date="1553838876349" expanded="true" signature="2376:2381" ph="..." />
+                <marker date="1553843693184" expanded="true" signature="118:119" ph="..." />
+                <marker date="1553843693184" expanded="true" signature="118:123" ph="..." />
+                <marker date="1553843693184" expanded="true" signature="1499:1839" ph="..." />
+                <marker date="1553843693184" expanded="true" signature="1499:1850" ph="..." />
+                <marker date="1553843693184" expanded="true" signature="2114:2119" ph="..." />
+                <marker date="1553843693184" expanded="true" signature="2382:2387" ph="..." />
               </folding>
             </state>
           </provider>
@@ -93,11 +95,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/monitor/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="361">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
-                <marker date="1553838876319" expanded="true" signature="434:440" ph="..." />
+                <marker date="1553843043197" expanded="true" signature="461:529" ph="..." />
               </folding>
             </state>
           </provider>
@@ -116,9 +118,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/monitor/__init__.py" />
-        <option value="$PROJECT_DIR$/Xmonitor/settings.py" />
-        <option value="$PROJECT_DIR$/monitor/models.py" />
         <option value="$PROJECT_DIR$/monitor/admin.py" />
+        <option value="$PROJECT_DIR$/monitor/models.py" />
+        <option value="$PROJECT_DIR$/Xmonitor/settings.py" />
       </list>
     </option>
   </component>
@@ -129,8 +131,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="332" />
-    <option name="y" value="64" />
+    <option name="x" value="214" />
+    <option name="y" value="54" />
     <option name="width" value="1557" />
     <option name="height" value="1100" />
   </component>
@@ -151,7 +153,7 @@
             <path>
               <item name="Xmonitor" type="b2602c69:ProjectViewProjectNode" />
               <item name="Xmonitor" type="462c0819:PsiDirectoryNode" />
-              <item name="monitor" type="462c0819:PsiDirectoryNode" />
+              <item name="Xmonitor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -258,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1553763638630</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="3">
+      <created>1553838958562</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1553838958563</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -271,17 +280,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="332" y="64" width="1557" height="1100" extended-state="1" />
+    <frame x="214" y="54" width="1557" height="1100" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21843687" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21843687" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="manage.py@Xmonitor" weight="0.32953367" />
+      <window_info anchor="bottom" id="manage.py@Xmonitor" weight="0.3284974" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.098445594" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.29430053" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32920793" />
@@ -362,37 +371,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/monitor/models.py">
+    <entry file="file://E:/Program Files/Python36/Lib/site-packages/django/db/models/fields/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <marker date="1553838876349" expanded="true" signature="118:119" ph="..." />
-            <marker date="1553838876349" expanded="true" signature="118:123" ph="..." />
-            <marker date="1553838876349" expanded="true" signature="1488:1833" ph="..." />
-            <marker date="1553838876349" expanded="true" signature="1488:1844" ph="..." />
-            <marker date="1553838876349" expanded="true" signature="2108:2113" ph="..." />
-            <marker date="1553838876349" expanded="true" signature="2376:2381" ph="..." />
-          </folding>
+        <state relative-caret-position="484">
+          <caret line="743" selection-start-line="743" selection-end-line="743" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Program Files/Python36/Lib/site-packages/django/core/management/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="424" selection-start-line="424" selection-end-line="424" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/monitor/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="361">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
-            <marker date="1553838876319" expanded="true" signature="434:440" ph="..." />
+            <marker date="1553843043197" expanded="true" signature="461:529" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Xmonitor/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+        <state relative-caret-position="570">
+          <caret line="33" selection-start-line="33" selection-end-line="33" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monitor/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <marker date="1553843693184" expanded="true" signature="118:119" ph="..." />
+            <marker date="1553843693184" expanded="true" signature="118:123" ph="..." />
+            <marker date="1553843693184" expanded="true" signature="1499:1839" ph="..." />
+            <marker date="1553843693184" expanded="true" signature="1499:1850" ph="..." />
+            <marker date="1553843693184" expanded="true" signature="2114:2119" ph="..." />
+            <marker date="1553843693184" expanded="true" signature="2382:2387" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
