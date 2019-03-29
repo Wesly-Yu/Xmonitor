@@ -1,12 +1,12 @@
 from django.db import models
-
+from django.contrib.auth.models import User
 
 
 '''监控的主机--服务器端'''
 class Host(models.Model):
     hostname = models.CharField(max_length=64,unique=True)
     ip_address = models.GenericIPAddressField(unique=True)
-    host_group = models.ManyToManyField('HostGroup',blank=True)
+    host_groups = models.ManyToManyField('HostGroup',blank=True)
     agent_choices = (('snmp','snmp'),('agent','agent'),('wget','wget'))
     agent_type = models.SmallIntegerField(agent_choices)
     templates = models.ManyToManyField("Template",blank=True)
@@ -57,3 +57,10 @@ class HostGroup(models.Model):
     memo = models.TextField(u'备注',blank=True,null=True)
     def __str__(self):
         return self.group_name
+
+
+class Userprofile(models.Model):
+    user = models.ForeignKey(User,on_delete=models.CASCADE)
+    username = models.CharField(max_length=64,blank=True,null=True)
+    def __str__(self):
+        return self.username
