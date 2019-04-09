@@ -80,7 +80,7 @@ class Client_operation(object):
                 return callback
             except urllib.error as e:
                 exit("\033[31;1m%s\033[0m"%e)
-        elif type in ('post','POST'):
+        elif type in ('post','POST'):              #将获取到的数据返回给服务器端并画图
             try:
                 data_encode = urllib.parse.urlencode(extra_data['params'])
                 req = urllib.request.urlopen(url=real_url,data=data_encode,timeout=settings.config['RequestTimeout'])

@@ -8,3 +8,8 @@ def client_config(request,client_id):
     config = config_obj.get_configs()
     if config:
         return HttpResponse(json.dumps(config))
+
+
+def service_report(request):
+    print("ok")
+    return  HttpResponse('status:200')

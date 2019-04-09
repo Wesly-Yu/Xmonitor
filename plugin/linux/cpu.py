@@ -20,7 +20,8 @@ def cpu_monitor_data(first_invoke=1):
         'cpu_monitor':result_str,
         'status':0
     }
-    return value_dict
+    result_str = str(result_str)
+    return result_str
 
 
 

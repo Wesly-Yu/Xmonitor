@@ -4,7 +4,9 @@
     <list default="true" id="8c816cf3-bd8a-4499-aac4-82d9e8c18914" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/core/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/Client/core/client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin/plugin_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/plugin_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitor/api_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/monitor/api_urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitor/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/monitor/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/linux/cpu.py" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/linux/cpu.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Xmonitor$cpu.coverage" NAME="cpu Coverage Results" MODIFIED="1554791657244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plugin/linux" />
+    <SUITE FILE_PATH="coverage/Xmonitor$cpu.coverage" NAME="cpu Coverage Results" MODIFIED="1554794311502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plugin/linux" />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -36,29 +38,29 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="6341" />
+          <entry key="py" value="6561" />
           <entry key="py@Xmonitor" value="204" />
-          <entry key="txt" value="50" />
+          <entry key="txt" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CommandLine" value="91" />
-          <entry key="PLAIN_TEXT" value="163" />
-          <entry key="Python" value="6341" />
+          <entry key="PLAIN_TEXT" value="165" />
+          <entry key="Python" value="6561" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="1" />
-          <entry key="py" value="49" />
+          <entry key="py" value="50" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="Python" value="49" />
+          <entry key="Python" value="50" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
@@ -67,10 +69,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/monitor/api_urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/monitor/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="266">
+              <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
               <folding>
                 <element signature="e#14#62#0" expanded="true" />
               </folding>
@@ -78,15 +92,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plugin/linux/cpu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="342">
+              <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
               <folding>
-                <marker date="1554791680513" expanded="true" signature="164:169" ph="..." />
-                <marker date="1554791680513" expanded="true" signature="164:473" ph="..." />
-                <marker date="1554791680513" expanded="true" signature="164:474" ph="..." />
+                <marker date="1554794545173" expanded="true" signature="164:169" ph="..." />
+                <marker date="1554794545173" expanded="true" signature="164:506" ph="..." />
+                <marker date="1554794545173" expanded="true" signature="164:507" ph="..." />
               </folding>
             </state>
           </provider>
@@ -104,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client/core/client.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="45" column="21" lean-forward="true" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+            <state relative-caret-position="549">
+              <caret line="89" column="47" lean-forward="true" selection-start-line="89" selection-start-column="47" selection-end-line="89" selection-end-column="47" />
               <folding>
                 <element signature="e#14#25#0" expanded="true" />
               </folding>
@@ -140,9 +154,7 @@
         <option value="$PROJECT_DIR$/monitor/models.py" />
         <option value="$PROJECT_DIR$/Xmonitor/settings.py" />
         <option value="$PROJECT_DIR$/monitor/get_api_data.py" />
-        <option value="$PROJECT_DIR$/monitor/views.py" />
         <option value="$PROJECT_DIR$/Xmonitor/urls.py" />
-        <option value="$PROJECT_DIR$/monitor/api_urls.py" />
         <option value="$PROJECT_DIR$/Client/bin/Xclient.py" />
         <option value="$PROJECT_DIR$/Client/core/main.py" />
         <option value="$PROJECT_DIR$/plugin/windows.py" />
@@ -150,8 +162,10 @@
         <option value="$PROJECT_DIR$/plugin/linux.py" />
         <option value="$PROJECT_DIR$/plugin/linux/host_alive.py" />
         <option value="$PROJECT_DIR$/plugin/plugin_api.py" />
-        <option value="$PROJECT_DIR$/plugin/linux/cpu.py" />
         <option value="$PROJECT_DIR$/Client/core/client.py" />
+        <option value="$PROJECT_DIR$/monitor/api_urls.py" />
+        <option value="$PROJECT_DIR$/monitor/views.py" />
+        <option value="$PROJECT_DIR$/plugin/linux/cpu.py" />
       </list>
     </option>
   </component>
@@ -161,9 +175,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="36" />
-    <option name="y" value="62" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="211" />
+    <option name="y" value="-24" />
     <option name="width" value="1810" />
     <option name="height" value="1100" />
   </component>
@@ -191,8 +205,7 @@
             <path>
               <item name="Xmonitor" type="b2602c69:ProjectViewProjectNode" />
               <item name="Xmonitor" type="462c0819:PsiDirectoryNode" />
-              <item name="Client" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="monitor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Xmonitor" type="b2602c69:ProjectViewProjectNode" />
@@ -387,7 +400,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554780781165</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="plugin_api2">
+      <created>1554792406192</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1554792406192</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -400,15 +420,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="36" y="62" width="1810" height="1100" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19771428" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18443497" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34507772" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19869708" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.59481865" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -441,7 +461,8 @@
     <MESSAGE value="create client.py" />
     <MESSAGE value="cpu plugin" />
     <MESSAGE value="plugin_api" />
-    <option name="LAST_COMMIT_MESSAGE" value="plugin_api" />
+    <MESSAGE value="plugin_api2" />
+    <option name="LAST_COMMIT_MESSAGE" value="plugin_api2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
@@ -574,38 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugin/linux/cpu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <marker date="1554791680513" expanded="true" signature="164:169" ph="..." />
-            <marker date="1554791680513" expanded="true" signature="164:473" ph="..." />
-            <marker date="1554791680513" expanded="true" signature="164:474" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/monitor/api_urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/monitor/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#14#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Client/bin/Xclient.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -624,10 +613,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/core/client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="45" column="21" lean-forward="true" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+        <state relative-caret-position="549">
+          <caret line="89" column="47" lean-forward="true" selection-start-line="89" selection-start-column="47" selection-end-line="89" selection-end-column="47" />
           <folding>
             <element signature="e#14#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monitor/api_urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monitor/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding>
+            <element signature="e#14#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/linux/cpu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding>
+            <marker date="1554794545173" expanded="true" signature="164:169" ph="..." />
+            <marker date="1554794545173" expanded="true" signature="164:506" ph="..." />
+            <marker date="1554794545173" expanded="true" signature="164:507" ph="..." />
           </folding>
         </state>
       </provider>
