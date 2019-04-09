@@ -12,9 +12,8 @@ current_encoding =UTF8
 
 
 def cpu_monitor_data(first_invoke=1):
-    # shell_commend = 'sar 1 3| grep "^Average:"'
+    shell_commend = 'sar 1 3| grep "^Average:"'
     value_dict = {}
-    shell_commend = 'wmic cpu list brief'
     result_str = subprocess.Popen(shell_commend,shell=True,stdout=subprocess.PIPE).stdout.read()
     value_dict={
         'cpu_monitor':result_str,
