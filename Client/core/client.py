@@ -39,7 +39,7 @@ class Client_operation(object):
                 latest_interval = time_value[2]
                 if time.time()-latest_interval>monitor_interval:
                     print(latest_interval,time.time())
-                    self.monitor_service['services']['sevice_name'][2]=time.time()
+                    self.monitor_service['services']['sevice_name'][2]=time.time()          #更新最新的的监控时间
                     t=threading.Thread(target=self.use_plugin,args=(sevice_name,time_value))   #创建线程
                     t.start()
                     print('start monitor')
