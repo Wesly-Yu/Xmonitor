@@ -135,5 +135,6 @@ STATICFILES_DIRS = [
 REDIS_CONN = {
     'HOST': 'localhost',
     'PORT': 6379,
-    'PASSWD':''
+    'PASSWD':'',
+    'DB':0,
 }
