@@ -12,7 +12,7 @@ from monitor.back import redis_con
 '''{"services": {"LinuxCpu": ["LinuxCpuPlugin", 60], "LinuxLoad": ["LinuxLoadPlugin", 60], "LinuxMemery": ["LinuxMemeryPlugin", 60], "Mysql": ["mysql", 60]}}'''
 
 REDIS_OBJ = redis_con.redis_conn(settings)
-print(REDIS_OBJ)
+# print(REDIS_OBJ.set('new',123))
 
 def client_config(request,client_id):
     config_obj = Client_operation(client_id)

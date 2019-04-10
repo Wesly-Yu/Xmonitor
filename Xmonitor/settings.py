@@ -130,7 +130,11 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR,"static")
 ]
 
-
+STATUS_DATA_OPTIMIZATION = {
+    'latest':[0,600],       #存储最新的的600个点，1天的数据
+    '10mins':[600,4320],    #存储10分钟的，超过4320个点就删除点老的数据，1个月数据
+    '30mins':[1800,4320],   #存储30 分钟的数据，超过就删除老的数据，存3个月月
+}
 
 REDIS_CONN = {
     'HOST': 'localhost',
