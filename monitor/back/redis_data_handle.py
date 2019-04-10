@@ -44,10 +44,20 @@ class DataStore(object):
                     last_point_data,last_point_data_time = json.loads(self.redis_conn_obj.lrange(data_series_key_in_redis,-1,-1)[0].decode()) #lrang取出的值是一个列表
                     if time.time() - last_point_data_time >= data_interval:       #如果当前时间减去最后的存储时间大于间隔，则去掉多余的数据
                         latest_data_key_in_redis = "StatusData_%s_%s_latest" %(self.client_id,self.service_name)
-                        print()
+                        print('')
+                        #把最近n分钟的数据取到，保存到data_set里面
+                        data_set = self.slice_data(latest_data_key_in_redis,data_interval)
+                        if len(data_set)>0:
+                            optimized_data = self.get_optimized_data(data_series_key_in_redis,data_set)         #计算优化结果
+                            if optimized_data:
+                                self.save_optimized_data(data_series_key_in_redis,optimized_data)
+
+
+    def get_optimized_data(self):
 
 
 
+    def save_optimized_data(self):
 
 
 
