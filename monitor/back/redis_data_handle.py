@@ -52,7 +52,11 @@ class DataStore(object):
                             optimized_data = self.get_optimized_data(data_series_key_in_redis,data_set)         #计算优化结果
                             if optimized_data:
                                 self.save_optimized_data(data_series_key_in_redis,optimized_data)
-
+                if self.redis_conn_obj.llen(data_series_key_in_redis)>= max_lenth:
+                    self.redis_conn_obj.lpop(data_series_key_in_redis)
+        else:
+            print("report data is valid:",self.data)
+            raise ValueError
 
     def get_optimized_data(self,data_set_key,raw_service_data):
         '''计算服务端各种数据的平均值，最大值，中位数，最小值'''
@@ -73,13 +77,40 @@ class DataStore(object):
                     max_data = self.get_max(v_list)
                     min_data = self.get_min(v_list)
                     mid_data = self.get_mid(v_list)
-
+                    optimizes_dic[service_key]=[avg_data,max_data,min_data,mid_data]
+                    print(service_key,optimizes_dic[service_key])
 
 
 
     def save_optimized_data(self,data_series_key_in_redis,optimized_data):
-        '''保存数据到redis'''
+        '''将优化后的数据保存到redis'''
         print('保存数据到redis库')
+        self.redis_conn_obj.rpush(data_series_key_in_redis,json.dumps([optimized_data,time.time()]))
 
 
+    def get_average(self,data_dict):
+        '''求平均值'''
+        if len(data_dict)>0:
+            return round(sum(data_dict)/len(data_dict),2)
+        else:
+            return 0
+    def get_max(self,data_dict):
+        '''求最大值'''
+        if len(data_dict)>0:
+            return max(data_dict)
+        else:
+            return 0
 
+    def get_min(self,data_dict):
+        '''求最小值'''
+        if len(data_dict) > 0:
+            return min(data_dict)
+        else:
+            return 0
+    def get_mid(self,data_dict):
+        '''求中值'''
+        data_dict.sort()
+        if len(data_dict)>0:
+            return data_dict[int(len(data_dict)/2)]
+        else:
+            return 0

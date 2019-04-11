@@ -6,7 +6,7 @@ from monitor.get_api_data import Client_operation
 import json
 from django.views.decorators.csrf import csrf_exempt
 from monitor.back import redis_con
-
+from monitor.back.redis_data_handle import DataStore
 
 
 '''{"services": {"LinuxCpu": ["LinuxCpuPlugin", 60], "LinuxLoad": ["LinuxLoadPlugin", 60], "LinuxMemery": ["LinuxMemeryPlugin", 60], "Mysql": ["mysql", 60]}}'''
@@ -28,9 +28,9 @@ def service_report(request):
             post_data = json.loads(request.POST['data'])
             client_id = request.POST.get('client_id')
             service_name = request.POST.get('service_name')
+            data_optimized_save = DataStore(client_id,service_name,post_data,REDIS_OBJ)
 
-
-        except Exception as e:
-            print('fail')
+        except IndexError as e:
+            print('fail',e)
 
     return  HttpResponse(json.dumps("received service data"))
