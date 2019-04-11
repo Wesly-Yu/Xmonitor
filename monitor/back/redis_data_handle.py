@@ -53,7 +53,8 @@ class DataStore(object):
                                 self.save_optimized_data(data_series_key_in_redis,optimized_data)
 
 
-    def get_optimized_data(self):
+    def get_optimized_data(self,data_set_key,raw_service_data):
+
 
 
 

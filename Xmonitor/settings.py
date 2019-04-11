@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+from django_redis.cache import RedisCache
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -87,6 +89,17 @@ DATABASES = {
 
     }
 }
+
+# CACHES = {
+#     'default':{
+#         'BACKEND':'django_redis.cashe.RedisCache',
+#         'LOCATION':'redis://localhost:6379',
+#         'OPTIONS':{
+#             'CLIENT_CLASS':'djano_redis.client.DedaultClient',
+#             'PASSWORD':''
+#         },
+#     },
+# }
 
 
 # Password validation
