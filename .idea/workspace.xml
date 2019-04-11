@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8c816cf3-bd8a-4499-aac4-82d9e8c18914" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Xmonitor/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Xmonitor/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/monitor/back/redis_data_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/monitor/back/redis_data_handle.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,16 +37,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="8836" />
+          <entry key="py" value="8906" />
           <entry key="py@Xmonitor" value="204" />
-          <entry key="txt" value="70" />
+          <entry key="txt" value="71" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CommandLine" value="91" />
-          <entry key="PLAIN_TEXT" value="183" />
-          <entry key="Python" value="8836" />
+          <entry key="PLAIN_TEXT" value="184" />
+          <entry key="Python" value="8906" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -107,13 +106,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/monitor/back/redis_data_handle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-353">
-              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+            <state relative-caret-position="654">
+              <caret line="57" column="57" lean-forward="true" selection-start-line="57" selection-start-column="57" selection-end-line="57" selection-end-column="57" />
               <folding>
-                <marker date="1554887874983" expanded="true" signature="267:268" ph="..." />
-                <marker date="1554887874983" expanded="true" signature="267:273" ph="..." />
-                <marker date="1554887874983" expanded="true" signature="556:1013" ph="..." />
-                <marker date="1554887874983" expanded="true" signature="2742:2751" ph="..." />
+                <marker date="1554950938006" expanded="true" signature="267:268" ph="..." />
+                <marker date="1554950938006" expanded="true" signature="267:273" ph="..." />
+                <marker date="1554950938006" expanded="true" signature="556:1013" ph="..." />
+                <marker date="1554950938006" expanded="true" signature="2742:2747" ph="..." />
+                <marker date="1554950938006" expanded="true" signature="2742:2848" ph="..." />
               </folding>
             </state>
           </provider>
@@ -165,8 +165,8 @@
         <option value="$PROJECT_DIR$/monitor/redis_con.py" />
         <option value="$PROJECT_DIR$/monitor/back/redis_con.py" />
         <option value="$PROJECT_DIR$/monitor/views.py" />
-        <option value="$PROJECT_DIR$/monitor/back/redis_data_handle.py" />
         <option value="$PROJECT_DIR$/Xmonitor/settings.py" />
+        <option value="$PROJECT_DIR$/monitor/back/redis_data_handle.py" />
       </list>
     </option>
   </component>
@@ -177,8 +177,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="158" />
-    <option name="y" value="20" />
+    <option name="x" value="405" />
+    <option name="y" value="36" />
     <option name="width" value="1810" />
     <option name="height" value="1100" />
   </component>
@@ -459,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554883955242</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="redis_data4">
+      <created>1554950160173</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1554950160173</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView">
@@ -472,10 +479,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="693" y="133" width="1810" height="1100" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15885714" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14818764" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -519,7 +526,8 @@
     <MESSAGE value="redis_data1" />
     <MESSAGE value="redis_data2" />
     <MESSAGE value="redis_data3" />
-    <option name="LAST_COMMIT_MESSAGE" value="redis_data3" />
+    <MESSAGE value="redis_data4" />
+    <option name="LAST_COMMIT_MESSAGE" value="redis_data4" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
@@ -712,13 +720,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/monitor/back/redis_data_handle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-353">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        <state relative-caret-position="654">
+          <caret line="57" column="57" lean-forward="true" selection-start-line="57" selection-start-column="57" selection-end-line="57" selection-end-column="57" />
           <folding>
-            <marker date="1554887874983" expanded="true" signature="267:268" ph="..." />
-            <marker date="1554887874983" expanded="true" signature="267:273" ph="..." />
-            <marker date="1554887874983" expanded="true" signature="556:1013" ph="..." />
-            <marker date="1554887874983" expanded="true" signature="2742:2751" ph="..." />
+            <marker date="1554950938006" expanded="true" signature="267:268" ph="..." />
+            <marker date="1554950938006" expanded="true" signature="267:273" ph="..." />
+            <marker date="1554950938006" expanded="true" signature="556:1013" ph="..." />
+            <marker date="1554950938006" expanded="true" signature="2742:2747" ph="..." />
+            <marker date="1554950938006" expanded="true" signature="2742:2848" ph="..." />
           </folding>
         </state>
       </provider>

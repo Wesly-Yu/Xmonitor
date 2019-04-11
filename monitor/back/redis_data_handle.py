@@ -54,11 +54,14 @@ class DataStore(object):
 
 
     def get_optimized_data(self,data_set_key,raw_service_data):
+        '''计算服务端各种数据的平均值，最大值，中位数，最小值'''
+        print('get_optimized_data:', raw_service_data[0])
 
 
 
-
-    def save_optimized_data(self):
+    def save_optimized_data(self,data_series_key_in_redis,optimized_data):
+        '''保存数据到redis'''
+        print('保存数据到redis库')
 
 
 
