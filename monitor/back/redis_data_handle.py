@@ -8,6 +8,7 @@ import copy
 
 
 '''{"services": {"LinuxCpu": ["LinuxCpuPlugin", 60], "LinuxLoad": ["LinuxLoadPlugin", 60], "LinuxMemery": ["LinuxMemeryPlugin", 60], "Mysql": ["mysql", 60]}}'''
+'''数据格式：[{'idle':'98.60','nice':'0','user':'0.69','system':'1.38','status':'0'},1496571177.3680441]'''
 class DataStore(object):
 
     def __init__(self,client_id,service_name,data,redis_obj):
@@ -56,6 +57,13 @@ class DataStore(object):
     def get_optimized_data(self,data_set_key,raw_service_data):
         '''计算服务端各种数据的平均值，最大值，中位数，最小值'''
         print('get_optimized_data:', raw_service_data[0])
+        service_data_keys = raw_service_data[0][0].keys()
+        optimizes_dic = {}   #保存优化后的数据
+        for key in service_data_keys:
+            optimizes_dic[key] = []
+            temporary_data_dict = copy.deepcopy(optimizes_dic)  #将数据复制出来进行计算，避免影响原始数据
+            for service_data_item,last_save_time in raw_service_data:
+                for service_index,v in service_data_item.items():
 
 
 
