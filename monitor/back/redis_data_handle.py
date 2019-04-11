@@ -64,6 +64,16 @@ class DataStore(object):
             temporary_data_dict = copy.deepcopy(optimizes_dic)  #将数据复制出来进行计算，避免影响原始数据
             for service_data_item,last_save_time in raw_service_data:
                 for service_index,v in service_data_item.items():
+                    try:
+                        temporary_data_dict[service_index].append(round(float(v),2))    #把指标名和值存储到列表中{idele:[80,90,98,70]}
+                    except ValueError as e:
+                        pass
+                for service_key,v_list in temporary_data_dict.items():
+                    avg_data = self.get_average(v_list)
+                    max_data = self.get_max(v_list)
+                    min_data = self.get_min(v_list)
+                    mid_data = self.get_mid(v_list)
+
 
 
 
