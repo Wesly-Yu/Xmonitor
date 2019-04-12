@@ -16,7 +16,8 @@ class TemplateAdmin(admin.ModelAdmin):
 class ServicesAdmin(admin.ModelAdmin):
     list_display = ('service_name','interval','plugin_name')
 
-
+class ActionsAdmin(admin.ModelAdmin):
+    list_display = ('name','triggers','hosts','interval','operation')
 
 
 
@@ -27,3 +28,7 @@ admin.site.register(models.Template)
 admin.site.register(models.ServiceIndex)
 admin.site.register(models.Services,ServicesAdmin)
 admin.site.register(models.Userprofile)
+admin.site.register(models.Actions)
+admin.site.register(models.ActionOperation)
+admin.site.register(models.Trigger)
+admin.site.register(models.Strategy)
