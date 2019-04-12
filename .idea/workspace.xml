@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c816cf3-bd8a-4499-aac4-82d9e8c18914" name="Default Changelist" comment="">
+    <list default="true" id="8c816cf3-bd8a-4499-aac4-82d9e8c18914" name="Default Changelist" comment="model04">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/monitor/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/monitor/models.py" afterDir="false" />
     </list>
@@ -38,16 +38,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="10690" />
+          <entry key="py" value="11509" />
           <entry key="py@Xmonitor" value="204" />
-          <entry key="txt" value="84" />
+          <entry key="txt" value="86" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CommandLine" value="91" />
-          <entry key="PLAIN_TEXT" value="197" />
-          <entry key="Python" value="10690" />
+          <entry key="PLAIN_TEXT" value="199" />
+          <entry key="Python" value="11509" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -95,14 +95,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/monitor/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="89" column="37" lean-forward="true" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
+            <state relative-caret-position="369">
+              <caret line="89" column="28" lean-forward="true" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
               <folding>
-                <marker date="1555042014215" expanded="true" signature="2596:2601" ph="..." />
-                <marker date="1555042014215" expanded="true" signature="3231:3232" ph="..." />
-                <marker date="1555042014215" expanded="true" signature="3231:3475" ph="..." />
-                <marker date="1555042014215" expanded="true" signature="3231:3477" ph="..." />
-                <marker date="1555042014215" expanded="true" signature="3505:3506" ph="..." />
+                <marker date="1555050470200" expanded="true" signature="2596:2601" ph="..." />
+                <marker date="1555050470200" expanded="true" signature="3781:3782" ph="..." />
+                <marker date="1555050470200" expanded="true" signature="3781:4247" ph="..." />
+                <marker date="1555050470200" expanded="true" signature="3781:4249" ph="..." />
+                <marker date="1555050470200" expanded="true" signature="4277:4278" ph="..." />
+                <marker date="1555050470200" expanded="true" signature="4277:4282" ph="..." />
               </folding>
             </state>
           </provider>
@@ -178,10 +179,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="710" />
-    <option name="y" value="88" />
+    <option name="x" value="65" />
+    <option name="y" value="133" />
     <option name="width" value="1810" />
-    <option name="height" value="1100" />
+    <option name="height" value="1094" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -516,7 +517,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555038338681</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="model03">
+      <created>1555042793159</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1555042793159</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TodoView">
@@ -529,7 +537,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="710" y="88" width="1810" height="1100" extended-state="0" />
+    <frame x="305" y="316" width="1810" height="1094" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16057143" />
@@ -538,7 +546,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.1896373" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.22487047" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.22627737" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32920793" />
@@ -583,7 +591,8 @@
     <MESSAGE value="redis_data8" />
     <MESSAGE value="model01" />
     <MESSAGE value="model02" />
-    <option name="LAST_COMMIT_MESSAGE" value="model02" />
+    <MESSAGE value="model03" />
+    <option name="LAST_COMMIT_MESSAGE" value="model03" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
@@ -797,14 +806,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/monitor/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="89" column="37" lean-forward="true" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
+        <state relative-caret-position="369">
+          <caret line="89" column="28" lean-forward="true" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
           <folding>
-            <marker date="1555042014215" expanded="true" signature="2596:2601" ph="..." />
-            <marker date="1555042014215" expanded="true" signature="3231:3232" ph="..." />
-            <marker date="1555042014215" expanded="true" signature="3231:3475" ph="..." />
-            <marker date="1555042014215" expanded="true" signature="3231:3477" ph="..." />
-            <marker date="1555042014215" expanded="true" signature="3505:3506" ph="..." />
+            <marker date="1555050470200" expanded="true" signature="2596:2601" ph="..." />
+            <marker date="1555050470200" expanded="true" signature="3781:3782" ph="..." />
+            <marker date="1555050470200" expanded="true" signature="3781:4247" ph="..." />
+            <marker date="1555050470200" expanded="true" signature="3781:4249" ph="..." />
+            <marker date="1555050470200" expanded="true" signature="4277:4278" ph="..." />
+            <marker date="1555050470200" expanded="true" signature="4277:4282" ph="..." />
           </folding>
         </state>
       </provider>
