@@ -69,9 +69,9 @@ class Userprofile(models.Model):
 
 class Strategy(models.Model):
     '''报警策略'''
-    trigger = models.ForeignKey('Trigger', verbose_name=u'所属触发器')
-    service = models.ForeignKey('Services', verbose_name=u'关联服务')
-    service_index = models.ForeignKey('ServiceIndex', verbose_name=u'关联服务指标')
+    trigger = models.ForeignKey('Trigger', verbose_name=u'所属触发器',on_delete=models.CASCADE)
+    service = models.ForeignKey('Services', verbose_name=u'关联服务',on_delete=models.CASCADE)
+    service_index = models.ForeignKey('ServiceIndex', verbose_name=u'关联服务指标',on_delete=models.CASCADE)
     specificed_index_key = models.CharField(verbose_name=u'只监控专门指定的指标key',max_length=64,blank=True,null=True)
     operator_type_choices = (('equal','='),('lt','>'),('st','<'))             #lt:larger than ,st:small than
     operator_type = models.CharField(u'运算符',choices=operator_type_choices,max_length=32)
@@ -90,7 +90,7 @@ class Strategy(models.Model):
 
 class Trigger(models.Model):
     '''告警级别'''
-    name = models.CharField(u'触发器名称',)
+    name = models.CharField(u'触发器名称',max_length=64)
     trigger_choices = ((1,'Information')
                       ,(2,'Warning'),
                       (3,'Average'),
