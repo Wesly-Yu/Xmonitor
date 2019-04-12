@@ -70,9 +70,22 @@ class Userprofile(models.Model):
 class Strategy(models.Model):
     '''报警策略'''
     name = models.CharField(max_length=64)
-    triggers = models.ManyToManyField('Trigger',blank=True,verbose_name=u'报警策略')
-
+    triggers = models.ManyToManyField('Trigger',blank=True,help_text=u'触发哪些报警策略')
+    hosts = models.ManyToManyField('Host',blank=True)
+    interval = models.IntegerField(u'告警间隔(s)',default=300)
+    operation = models.ManyToManyField('Actions')
+    recover_notice = models.BooleanField(u'故障恢复后发送通知',default=True)
+    recover_subject = models.CharField(max_length=128,blank=True,null=True)
+    recover_message = models.TextField(blank=True,null=True)
+    enable = models.BooleanField(default=True)
+    def __str__(self):
+        return self.name
 
 
 
 class Trigger(models.Model):
+
+
+
+
+class Actions(models.Model):
