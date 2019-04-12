@@ -117,3 +117,21 @@ class Actions(models.Model):
     enable = models.BooleanField(default=True)
     def __str__(self):
         return self.name
+
+class ActionOperation(models.Model):
+    '''报警动作'''
+    name = models.CharField(max_length=64)
+    step = models.SmallIntegerField(u"第n次告警",default=1,help_text="当trigger触发次数小于这个值时就执行这条记录里报警方式")
+    action_type_choices = (
+        ('email', 'Email'),
+        ('sms', 'SMS'),
+        ('script', 'RunScript'),
+    )
+    action_type = models.CharField(u"动作类型", choices=action_type_choices, default='email', max_length=64)
+    notifiers = models.ManyToManyField('Userprofile', verbose_name=u"通知对象", blank=True)
+    _msg_format = '''Host({hostname},{ip}) service({service_name}) has issue,msg:{msg}'''
+
+    msg_format = models.TextField(u"消息格式", default=_msg_format)
+
+    def __str__(self):
+        return self.name
