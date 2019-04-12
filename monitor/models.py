@@ -10,7 +10,7 @@ class Host(models.Model):
     monitor_choices = (('snmp','SNMP'),('agent','Agent'),('wget','WGET'))
     monitor_type = models.CharField(u'监控方式',choices=monitor_choices,max_length=64)
     templates = models.ManyToManyField("Template",blank=True)
-    status_choices = ((0,'Offline'),(1,'Online'),(2,'Error'),(3,'Down'),(4,'Unreachable'))
+    status_choices = ((0,'Online,'),(1,'Offline'),(2,'Error'),(3,'Down'),(4,'Unreachable'))
     status = models.IntegerField(u'状态',choices=status_choices,default=0)
     desc = models.TextField(u"备注",blank=True,null=True)
     host_alive_check_interval = models.IntegerField(u"检查主机存活间隔",default=30)
