@@ -32,7 +32,7 @@ class DataStore(object):
         return data_set
 
     def process_save(self):
-        if self.data['status'] ==0:
+        if self.data['status'] ==0:                 #status=0 表示online
             for key,data_series_val in settings.STATUS_DATA_OPTIMIZATION.items():
                 data_interval,max_lenth =data_series_val
                 data_series_key_in_redis = "StatusData_%s_%s_%s"  %(self.client_id,self.service_name,key)
@@ -51,7 +51,7 @@ class DataStore(object):
                         if len(data_set)>0:
                             optimized_data = self.get_optimized_data(data_series_key_in_redis,data_set)         #计算优化结果
                             if optimized_data:
-                                self.save_optimized_data(data_series_key_in_redis,optimized_data)
+                                self.save_optimized_data(data_series_key_in_redis,optimized_data)      #将优化的结果调用保存的  函数 保存到redis
                 if self.redis_conn_obj.llen(data_series_key_in_redis)>= max_lenth:
                     self.redis_conn_obj.lpop(data_series_key_in_redis)
         else:
@@ -65,7 +65,7 @@ class DataStore(object):
         optimizes_dic = {}   #保存优化后的数据
         for key in service_data_keys:
             optimizes_dic[key] = []
-            temporary_data_dict = copy.deepcopy(optimizes_dic)  #将数据复制出来进行计算，避免影响原始数据
+            temporary_data_dict = copy.deepcopy(optimizes_dic)          #将数据复制出来进行计算，避免影响原始数据
             for service_data_item,last_save_time in raw_service_data:
                 for service_index,v in service_data_item.items():
                     try:

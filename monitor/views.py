@@ -28,7 +28,7 @@ def service_report(request):
             post_data = json.loads(request.POST['data'])
             client_id = request.POST.get('client_id')
             service_name = request.POST.get('service_name')
-            # data_optimized_save = DataStore(client_id,service_name,post_data,REDIS_OBJ)
+            data_optimized_save = DataStore(client_id,service_name,post_data,REDIS_OBJ)
 
         except IndexError as e:
             print('fail',e)

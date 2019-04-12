@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c816cf3-bd8a-4499-aac4-82d9e8c18914" name="Default Changelist" comment="redis_data8">
+    <list default="true" id="8c816cf3-bd8a-4499-aac4-82d9e8c18914" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Xmonitor/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Xmonitor/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitor/back/redis_data_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/monitor/back/redis_data_handle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitor/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/monitor/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/monitor/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/monitor/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,7 +40,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="10055" />
+          <entry key="py" value="10265" />
           <entry key="py@Xmonitor" value="204" />
           <entry key="txt" value="75" />
         </counts>
@@ -48,20 +49,20 @@
         <counts>
           <entry key="CommandLine" value="91" />
           <entry key="PLAIN_TEXT" value="188" />
-          <entry key="Python" value="10055" />
+          <entry key="Python" value="10265" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="1" />
-          <entry key="py" value="67" />
+          <entry key="py" value="69" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="Python" value="67" />
+          <entry key="Python" value="69" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
@@ -84,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/monitor/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="17" column="33" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="33" />
+            <state relative-caret-position="209">
+              <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
               <folding>
                 <element signature="e#14#55#0" expanded="true" />
               </folding>
@@ -94,24 +95,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/monitor/get_api_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="e#15#41#0" expanded="true" />
-                <marker date="1554099170655" expanded="true" signature="146:147" ph="..." />
-                <marker date="1554099170655" expanded="true" signature="146:152" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/monitor/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="779">
-              <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+            <state relative-caret-position="426">
+              <caret line="72" column="78" selection-start-line="72" selection-start-column="78" selection-end-line="72" selection-end-column="78" />
+              <folding>
+                <marker date="1555037501008" expanded="true" signature="2596:2601" ph="..." />
+                <marker date="1555037501008" expanded="true" signature="2768:2769" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -137,22 +128,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/monitor/back/redis_data_handle.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="13" column="61" lean-forward="true" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
-              <folding>
-                <marker date="1554970877064" expanded="true" signature="370:371" ph="..." />
-                <marker date="1554970877064" expanded="true" signature="370:376" ph="..." />
-                <marker date="1554970877064" expanded="true" signature="659:1116" ph="..." />
-                <marker date="1554970877064" expanded="true" signature="3094:3099" ph="..." />
-                <marker date="1554970877064" expanded="true" signature="3094:4248" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -174,7 +149,6 @@
       <list>
         <option value="$PROJECT_DIR$/monitor/__init__.py" />
         <option value="$PROJECT_DIR$/monitor/admin.py" />
-        <option value="$PROJECT_DIR$/monitor/models.py" />
         <option value="$PROJECT_DIR$/Xmonitor/urls.py" />
         <option value="$PROJECT_DIR$/Client/bin/Xclient.py" />
         <option value="$PROJECT_DIR$/Client/core/main.py" />
@@ -188,10 +162,11 @@
         <option value="$PROJECT_DIR$/plugin/linux/cpu.py" />
         <option value="$PROJECT_DIR$/monitor/redis_con.py" />
         <option value="$PROJECT_DIR$/monitor/back/redis_con.py" />
-        <option value="$PROJECT_DIR$/monitor/back/redis_data_handle.py" />
-        <option value="$PROJECT_DIR$/monitor/views.py" />
         <option value="$PROJECT_DIR$/Xmonitor/settings.py" />
+        <option value="$PROJECT_DIR$/monitor/views.py" />
         <option value="$PROJECT_DIR$/monitor/get_api_data.py" />
+        <option value="$PROJECT_DIR$/monitor/back/redis_data_handle.py" />
+        <option value="$PROJECT_DIR$/monitor/models.py" />
       </list>
     </option>
   </component>
@@ -201,9 +176,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="139" />
-    <option name="y" value="100" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="70" />
+    <option name="y" value="-21" />
     <option name="width" value="1810" />
     <option name="height" value="1100" />
   </component>
@@ -226,6 +201,12 @@
               <item name="Xmonitor" type="b2602c69:ProjectViewProjectNode" />
               <item name="Xmonitor" type="462c0819:PsiDirectoryNode" />
               <item name="Client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Xmonitor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Xmonitor" type="462c0819:PsiDirectoryNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Xmonitor" type="b2602c69:ProjectViewProjectNode" />
@@ -513,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554972240157</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="redis_data8">
+      <created>1555034694895</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1555034694895</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView">
@@ -526,16 +514,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="124" y="304" width="1810" height="1100" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16057143" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14978679" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.1896373" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.37823835" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.23561347" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32920793" />
@@ -678,13 +666,6 @@
     <entry file="file://$PROJECT_DIR$/Client/core/main.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/core/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1577">
-          <caret line="89" column="47" selection-start-line="89" selection-start-column="47" selection-end-line="89" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugin/plugin_api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -727,33 +708,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/monitor/back/redis_data_handle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="13" column="61" lean-forward="true" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
-          <folding>
-            <marker date="1554970877064" expanded="true" signature="370:371" ph="..." />
-            <marker date="1554970877064" expanded="true" signature="370:376" ph="..." />
-            <marker date="1554970877064" expanded="true" signature="659:1116" ph="..." />
-            <marker date="1554970877064" expanded="true" signature="3094:3099" ph="..." />
-            <marker date="1554970877064" expanded="true" signature="3094:4248" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Xmonitor/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/monitor/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
           <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monitor/get_api_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+          <folding>
+            <element signature="e#15#41#0" expanded="true" />
+            <marker date="1555035210625" expanded="true" signature="146:147" ph="..." />
+            <marker date="1555035210625" expanded="true" signature="146:152" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monitor/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+          <folding>
+            <element signature="e#14#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monitor/back/redis_data_handle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="53" column="128" selection-start-line="53" selection-start-column="128" selection-end-line="53" selection-end-column="128" />
+          <folding>
+            <marker date="1555037207225" expanded="true" signature="370:371" ph="..." />
+            <marker date="1555037207225" expanded="true" signature="370:376" ph="..." />
+            <marker date="1555037207225" expanded="true" signature="659:1116" ph="..." />
+            <marker date="1555037207225" expanded="true" signature="3160:3165" ph="..." />
+            <marker date="1555037207225" expanded="true" signature="3160:4322" ph="..." />
           </folding>
         </state>
       </provider>
@@ -768,31 +764,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/monitor/views.py">
+    <entry file="file://$PROJECT_DIR$/Client/core/client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="33" />
-          <folding>
-            <element signature="e#14#55#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="944">
+          <caret line="61" column="49" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Xmonitor/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/monitor/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/monitor/get_api_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="426">
+          <caret line="72" column="78" selection-start-line="72" selection-start-column="78" selection-end-line="72" selection-end-column="78" />
           <folding>
-            <element signature="e#15#41#0" expanded="true" />
-            <marker date="1554099170655" expanded="true" signature="146:147" ph="..." />
-            <marker date="1554099170655" expanded="true" signature="146:152" ph="..." />
+            <marker date="1555037501008" expanded="true" signature="2596:2601" ph="..." />
+            <marker date="1555037501008" expanded="true" signature="2768:2769" ph="..." />
           </folding>
         </state>
       </provider>
