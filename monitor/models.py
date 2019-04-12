@@ -84,7 +84,13 @@ class Strategy(models.Model):
 
 
 class Trigger(models.Model):
-
+    '''告警级别'''
+    name = models.CharField(u'触发器名称',)
+    strigger_choices = ((1,'Information')
+                      ,(2,'Warning'),
+                      (3,'Average'),
+                      (4,'High'),
+                      (5,'Diaster'))
 
 
 

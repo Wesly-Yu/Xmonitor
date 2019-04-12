@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8c816cf3-bd8a-4499-aac4-82d9e8c18914" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitor/back/redis_data_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/monitor/back/redis_data_handle.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/monitor/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/monitor/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitor/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/monitor/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,16 +38,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="10265" />
+          <entry key="py" value="10690" />
           <entry key="py@Xmonitor" value="204" />
-          <entry key="txt" value="75" />
+          <entry key="txt" value="84" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CommandLine" value="91" />
-          <entry key="PLAIN_TEXT" value="188" />
-          <entry key="Python" value="10265" />
+          <entry key="PLAIN_TEXT" value="197" />
+          <entry key="Python" value="10690" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -97,11 +95,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/monitor/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="72" column="78" selection-start-line="72" selection-start-column="78" selection-end-line="72" selection-end-column="78" />
+            <state relative-caret-position="546">
+              <caret line="89" column="37" lean-forward="true" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
               <folding>
-                <marker date="1555037501008" expanded="true" signature="2596:2601" ph="..." />
-                <marker date="1555037501008" expanded="true" signature="2768:2769" ph="..." />
+                <marker date="1555042014215" expanded="true" signature="2596:2601" ph="..." />
+                <marker date="1555042014215" expanded="true" signature="3231:3232" ph="..." />
+                <marker date="1555042014215" expanded="true" signature="3231:3475" ph="..." />
+                <marker date="1555042014215" expanded="true" signature="3231:3477" ph="..." />
+                <marker date="1555042014215" expanded="true" signature="3505:3506" ph="..." />
               </folding>
             </state>
           </provider>
@@ -176,9 +177,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="70" />
-    <option name="y" value="-21" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="710" />
+    <option name="y" value="88" />
     <option name="width" value="1810" />
     <option name="height" value="1100" />
   </component>
@@ -501,7 +502,21 @@
       <option name="project" value="LOCAL" />
       <updated>1555034694895</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="model01">
+      <created>1555037644505</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1555037644505</updated>
+    </task>
+    <task id="LOCAL-00027" summary="model02">
+      <created>1555038338681</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1555038338681</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView">
@@ -514,16 +529,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="710" y="88" width="1810" height="1100" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14978679" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16057143" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.1896373" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.23561347" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.22487047" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32920793" />
@@ -566,7 +581,9 @@
     <MESSAGE value="redis_data6" />
     <MESSAGE value="redis_data7" />
     <MESSAGE value="redis_data8" />
-    <option name="LAST_COMMIT_MESSAGE" value="redis_data8" />
+    <MESSAGE value="model01" />
+    <MESSAGE value="model02" />
+    <option name="LAST_COMMIT_MESSAGE" value="model02" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
@@ -780,11 +797,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/monitor/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="72" column="78" selection-start-line="72" selection-start-column="78" selection-end-line="72" selection-end-column="78" />
+        <state relative-caret-position="546">
+          <caret line="89" column="37" lean-forward="true" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
           <folding>
-            <marker date="1555037501008" expanded="true" signature="2596:2601" ph="..." />
-            <marker date="1555037501008" expanded="true" signature="2768:2769" ph="..." />
+            <marker date="1555042014215" expanded="true" signature="2596:2601" ph="..." />
+            <marker date="1555042014215" expanded="true" signature="3231:3232" ph="..." />
+            <marker date="1555042014215" expanded="true" signature="3231:3475" ph="..." />
+            <marker date="1555042014215" expanded="true" signature="3231:3477" ph="..." />
+            <marker date="1555042014215" expanded="true" signature="3505:3506" ph="..." />
           </folding>
         </state>
       </provider>
