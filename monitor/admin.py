@@ -11,7 +11,7 @@ class HostAdmin(admin.ModelAdmin):
     filter_horizontal = ('host_groups','templates')
 
 class TemplateAdmin(admin.ModelAdmin):
-    filter_horizontal = ('service')
+    filter_horizontal = ('service','triggers')
 
 class ServicesAdmin(admin.ModelAdmin):
     list_display = ('service_name','interval','plugin_name')
@@ -19,8 +19,16 @@ class ServicesAdmin(admin.ModelAdmin):
 class ActionsAdmin(admin.ModelAdmin):
     list_display = ('name','triggers','hosts','interval','operation')
 
+class StrategyAdmin(admin.ModelAdmin):
+    list_display = ('trigger', 'service', 'service_index', 'specificed_index_key', 'operator_type','data_calculator_func','threshold','logic_type')
+
+class StrategyInline(admin.TabularInline):
+    model = models.Strategy
 
 
+class TriggerAdmin(admin.ModelAdmin):
+    list_display = ('name','trigger_level','enable')
+    inlines = [StrategyInline]
 
 admin.site.register(models.Host,HostAdmin)
 admin.site.register(models.HostGroup)
@@ -30,5 +38,5 @@ admin.site.register(models.Services,ServicesAdmin)
 admin.site.register(models.Userprofile)
 admin.site.register(models.Actions)
 admin.site.register(models.ActionOperation)
-admin.site.register(models.Trigger)
-admin.site.register(models.Strategy)
+admin.site.register(models.Trigger,TriggerAdmin)
+admin.site.register(models.Strategy,StrategyAdmin)
