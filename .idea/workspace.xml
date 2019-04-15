@@ -38,16 +38,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="12028" />
-          <entry key="py@Xmonitor" value="224" />
-          <entry key="txt" value="93" />
+          <entry key="py" value="12085" />
+          <entry key="py@Xmonitor" value="226" />
+          <entry key="txt" value="100" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CommandLine" value="109" />
-          <entry key="PLAIN_TEXT" value="208" />
-          <entry key="Python" value="12028" />
+          <entry key="CommandLine" value="111" />
+          <entry key="PLAIN_TEXT" value="215" />
+          <entry key="Python" value="12085" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -102,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/monitor/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="98" column="4" lean-forward="true" selection-start-line="98" selection-start-column="4" selection-end-line="98" selection-end-column="17" />
+            <state relative-caret-position="351">
+              <caret line="129" column="4" lean-forward="true" selection-start-line="129" selection-start-column="4" selection-end-line="129" selection-end-column="15" />
               <folding>
                 <marker date="1555058729676" expanded="true" signature="2596:2601" ph="..." />
                 <marker date="1555058729676" expanded="true" signature="4002:4003" ph="..." />
@@ -120,11 +120,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/monitor/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+            <state relative-caret-position="171">
+              <caret line="9" column="58" lean-forward="true" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
-                <marker date="1555309980746" expanded="true" signature="942:1028" ph="..." />
+                <marker date="1555310762672" expanded="true" signature="689:740" ph="..." />
+                <marker date="1555310762672" expanded="true" signature="1038:1124" ph="..." />
               </folding>
             </state>
           </provider>
@@ -147,6 +148,11 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>severity</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -188,8 +194,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="54" />
-    <option name="y" value="191" />
+    <option name="x" value="-65" />
+    <option name="y" value="33" />
     <option name="width" value="1810" />
     <option name="height" value="1043" />
   </component>
@@ -568,7 +574,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555291454160</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="admin01">
+      <created>1555310112667</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1555310112667</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView">
@@ -581,10 +594,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="223" y="724" width="1810" height="1043" extended-state="0" />
+    <frame x="-65" y="33" width="1810" height="1043" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16228572" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15371428" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -600,7 +613,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3138686" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32886904" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32920793" />
-      <window_info active="true" anchor="bottom" id="manage.py@Xmonitor" order="13" visible="true" weight="0.3270925" />
+      <window_info anchor="bottom" id="manage.py@Xmonitor" order="13" weight="0.3270925" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -615,7 +628,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1" />
     <MESSAGE value="2" />
     <MESSAGE value="3" />
     <MESSAGE value="create client.py" />
@@ -640,7 +652,8 @@
     <MESSAGE value="model07" />
     <MESSAGE value="model08" />
     <MESSAGE value="model0" />
-    <option name="LAST_COMMIT_MESSAGE" value="model0" />
+    <MESSAGE value="admin01" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin01" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
@@ -832,8 +845,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/monitor/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="98" column="4" lean-forward="true" selection-start-line="98" selection-start-column="4" selection-end-line="98" selection-end-column="17" />
+        <state relative-caret-position="351">
+          <caret line="129" column="4" lean-forward="true" selection-start-line="129" selection-start-column="4" selection-end-line="129" selection-end-column="15" />
           <folding>
             <marker date="1555058729676" expanded="true" signature="2596:2601" ph="..." />
             <marker date="1555058729676" expanded="true" signature="4002:4003" ph="..." />
@@ -848,11 +861,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/monitor/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+        <state relative-caret-position="171">
+          <caret line="9" column="58" lean-forward="true" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
-            <marker date="1555309980746" expanded="true" signature="942:1028" ph="..." />
+            <marker date="1555310762672" expanded="true" signature="689:740" ph="..." />
+            <marker date="1555310762672" expanded="true" signature="1038:1124" ph="..." />
           </folding>
         </state>
       </provider>

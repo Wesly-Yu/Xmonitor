@@ -19,6 +19,9 @@ class ServicesAdmin(admin.ModelAdmin):
 class ActionsAdmin(admin.ModelAdmin):
     list_display = ('name','triggers','hosts','interval','operation')
 
+class ActionOperationAdmin(admin.ModelAdmin):
+    list_display = ('name','step','action_type')
+
 class StrategyAdmin(admin.ModelAdmin):
     list_display = ('trigger', 'service', 'service_index', 'specificed_index_key', 'operator_type','data_calculator_func','threshold','logic_type')
 
